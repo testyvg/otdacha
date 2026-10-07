@@ -1,0 +1,13 @@
+<!doctype html>
+<html lang="ru"><head><meta charset="utf-8"><title>Отдача</title>
+<meta name="viewport" content="width=device-width, initial-scale=1"><meta name="robots" content="noindex"></head>
+<body style="background:#0E1220;color:#E8EBF3;font-family:sans-serif;text-align:center;padding:40px 16px">
+<p>Открываем «Отдачу»…</p>
+<script>
+/* страница трека ещё собирается (GitHub Pages публикует её ~минуту) или ссылка неизвестна —
+   всё равно отправляем человека на сайт, на этот трек */
+var m = location.pathname.match(/\/(?:t\/)?([0-9A-Za-z]{5,12})\/?(?:\.html)?$/);
+if(m && m[1] === "index") m = null;
+location.replace("https://otdacha.space" + "/prototype.html" + (m ? "?t=" + m[1] : ""));
+</script>
+</body></html>
